@@ -1,0 +1,110 @@
+.countdownHolder{
+	width:950px;
+	margin:0 auto;
+	font: 50px/1.6 'Open Sans Condensed',sans-serif;
+	text-align:center;
+	letter-spacing:-3px;
+}
+
+.position{
+	display: inline-block;
+	height: 1.6em;
+	overflow: hidden;
+	position: relative;
+	width: 1.05em;
+}
+
+.digit{
+	position:absolute;
+	display:block;
+	width:1.0em;
+	background-color:#F9CDFC;
+	border-radius:0.2em;
+	text-align:center;
+	color:#fff;
+	letter-spacing:-1px;
+}
+
+.digit.static{
+	box-shadow:1px 1px 1px rgba(4, 4, 4, 0.35);
+
+	background-image: linear-gradient(bottom, #F9A8FF 50%, #F692FE 50%);
+	background-image: -o-linear-gradient(bottom, #F9A8FF 50%, #F692FE 50%);
+	background-image: -moz-linear-gradient(bottom, #F9A8FF 50%, #F692FE 50%);
+	background-image: -webkit-linear-gradient(bottom, #F9A8FF 50%, #F692FE 50%);
+	background-image: -ms-linear-gradient(bottom, #F9A8FF 50%, #F692FE 50%);
+
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.5, #F9A8FF),   //카운트 숫자 색깔아랫부분
+		color-stop(0.5, #F692FE)     //카운트 숫자 색깔윗부분
+	);
+}
+/*.digit.statics{
+	box-shadow:1px 1px 1px rgba(4, 4, 4, 0.35);
+
+	background-image: linear-gradient(bottom, #E3FCCD 50%, #C2F793  50%);
+	background-image: -o-linear-gradient(bottom, #E3FCCD 50%, #C2F793  50%);
+	background-image: -moz-linear-gradient(bottom, #E3FCCD 50%, #C2F793  50%);
+	background-image: -webkit-linear-gradient(bottom, #E3FCCD 50%, #C2F793 50%);
+	background-image: -ms-linear-gradient(bottom, #E3FCCD 50%, #C2F793  50%);
+
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.5, #E3FCCD),   //카운트 숫자 색깔아랫부분
+		color-stop(0.5, #C2F793 )     //카운트 숫자 색깔윗부분
+	);
+}
+*/
+
+/**
+ * You can use these classes to hide parts
+ * of the countdown that you don't need.
+ */
+
+.countDays{ /* display:none !important;*/ }
+.countDiv0{ /* display:none !important;*/ }
+.countHours{}
+.countDiv1{}
+.countMinutes{}
+.countDiv2{}
+.countSeconds{}
+
+
+.countDiv{
+	display:inline-block;
+	width:18px;
+	height:1.6em;
+	position:relative;
+}
+
+.countDiv:before,
+.countDiv:after{
+	position:absolute;
+	width:5px;
+	height:5px;
+	background-color:#444;
+	border-radius:50%;
+	left:50%;
+	margin-left:-5px;
+	top:0.5em;
+	box-shadow:1px 1px 1px rgba(4, 4, 4, 0.5);
+	content:"";
+}
+
+.countDiv:after{
+	top:0.9em;
+}
+
+@media (max-width: 1024px){
+	.countdownHolder{
+		margin:0 auto;
+		font: 50px 'Open Sans Condensed',sans-serif;
+		text-align:center;
+		letter-spacing:-4px;
+	}
+}

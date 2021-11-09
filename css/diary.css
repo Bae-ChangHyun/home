@@ -1,0 +1,153 @@
+.side {
+  border: 5px dashed #B88090;
+  margin: 6px;
+  padding: 25px;
+}
+
+.nav-bar {
+  width: 100%;
+  margin-left: 40px;
+  padding: 1;
+  background-color: black;
+  list-style-type: none;
+  font-family: monospace;
+  text-align: center;
+}
+
+.nav-item {
+  padding: 15px;
+  cursor: pointer;
+}
+.nav-item a:hover{
+  color: #B88090;
+}
+
+.nav-item a {
+  text-align: : center;
+  text-decoration: none;
+  color: #7F83A3;
+  width: 100px;
+  margin: 0 auto;
+  font-weight: bold;
+  border-bottom: 10;
+}
+
+.title {
+  font-size: 75px;
+  font-weight: bold;
+  text-align: center;
+  color: #7F83A3;
+  text-shadow: 4px 4px #E6E6E6;
+  font-family: fantasy;
+  background-color: #FDF5E6;
+  padding: 30px;
+  margin-top: 20px;
+}
+
+hr {
+  height: 4px;
+  background-color: #E6E6E6;
+  margin-top: 5px;
+  border : 0;
+}
+
+.mainbox1 {
+  margin-top: 30px;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 3px;
+  weight: 90%;
+  background-color: #E6BDC5;
+  border-radius: 7px;
+  color: white;
+  font-weight: 600;
+}
+
+.mainbox2 {
+  text-align: left;
+  background-color: #FFFFFF;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  color: gray;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin: 0;
+  float: left;
+  color: #585858;
+}
+
+td.wh2 {
+  text-align: center;
+  background-color: #FDF5E6;
+  padding: 5px;
+  border-radius: 5px;
+  color: gray;
+}
+
+td.wh3 {
+  text-align: center;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  color: gray;
+}
+
+a {
+  text-decoration: none;
+}
+
+.pagination {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.pagination a {
+  color: black;
+  padding: 4px 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+.pagination a.exp {
+  color: #7F83A3;
+  padding: 4px 10px;
+  border: 1px solid #ddd;
+  font-weight: bold;
+}
+
+.pagination a.active {
+  background-color: #5882FA;
+  color: white;
+  border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+
+.write-btn-text {
+  text-align: right;
+}
+
+button[name=write-btn] {
+  margin-top: 20px;
+  margin-right: 245px;
+  margin-bottom: -25px;
+  background-color: #B88090;
+  color: white;
+  border: none;
+  weight: 100%;
+  padding: 5px 10px 5px 10px;
+  font-size: 15px;
+  font-weight: 550;
+}
+
+button[name=write-btn]:hover {
+  background-color: #F2EED3;
+  color: #7F83A3;
+}
